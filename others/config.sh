@@ -1,0 +1,1 @@
+mkdir $HOME/.config/vscode # for --user-data-dir. see [../oh-my-zsh/aliases.kali.zsh]

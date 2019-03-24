@@ -1,0 +1,1 @@
+alias vsc=code . --user-data-dir $HOME/.config/vscode
