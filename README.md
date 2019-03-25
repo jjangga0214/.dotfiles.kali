@@ -1,5 +1,11 @@
 # .dotfiles.kali
 
+.dotfiles project for kali rolling or later.
+
+## :warning: CAUTION
+
+Read [CAUTION.md](CAUTION.md) before any execution here.
+
 ## project convention
 
 * Most directories have **README.md**. Please refer them to get detail.
@@ -11,9 +17,7 @@
 I prefer to place .dotfiles project under `$HOME` with name of **.dotfiles**. I even set `alias dot=cd ~/.dotfiles` on [jjangga0214/.dotfiles.oh-my-zsh](https://github.com/jjangga0214/.dotfiles.oh-my-zsh) which is used as git submodule of git submodule([jjangga0214/.dotfiles.debain.core](jjangga0214/.dotfiles.debian.core)) in this project.
 
 ```bash
-git clone https://github.com/jjangga0214/.dotfiles.kali.git $HOME/.dotfiles && \
-cd $HOME/.dotfiles && \
-git submodule update
+git clone --recurse-submodules -j8 https://github.com/jjangga0214/.dotfiles.kali.git $HOME/.dotfiles
 ```
 
 ## automatic installation and configuration
@@ -23,3 +27,7 @@ Basically, this project is to automatically set preferable environment with ease
 ```bash
 sudo bash install.sh
 ```
+
+# maunal installation and configuration
+
+See [MANUAL.md](MANUAL.md).
