@@ -4,7 +4,8 @@
 
 ## :warning: CAUTION
 
-Read [CAUTION.md](CAUTION.md) before any execution here.
+* Read [CAUTION.md](CAUTION.md) before any execution here.
+* Read [README.md](.dotfiles.debain.core/README.md) of [.dotfiles.debain.core](.dotfiles.debain.core)(git submodule)
 
 ## project convention
 
@@ -31,3 +32,7 @@ sudo bash install.sh
 ## maunal installation and configuration
 
 See [MANUAL.md](MANUAL.md).
+
+## [license](LICENSE)
+
+[AGPL-3.0-or-later](LICENSE) © 2019 GIL B. Chan <bnbcmindnpass@gmail.com>
