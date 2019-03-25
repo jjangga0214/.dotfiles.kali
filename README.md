@@ -28,6 +28,6 @@ Basically, this project is to automatically set preferable environment with ease
 sudo bash install.sh
 ```
 
-# maunal installation and configuration
+## maunal installation and configuration
 
 See [MANUAL.md](MANUAL.md).
