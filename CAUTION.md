@@ -8,6 +8,14 @@
   * Check their CAUTIONS (if existing) as well.
     * [.dotfiles.debian.core/CAUTION.md](.dotfiles.debian.core/CAUTION.md)
 
+## environment variables
+
+You can export env vars to override default. Every env var has default value and respects exported value over default.
+
+(type, default value, source file)
+
+* `$DOTFILES_DOCKER_DEBIAN_RELEASE` (string, `"stretch"`, [apt/docker.sh](apt/docker.sh)): debian version to specify while installing docker. This is independent from variable of same name `$DOTFILES_DOCKER_DEBIAN_RELEASE` used in [.dotfiles.debian.core/apt/docker.sh](.dotfiles.debian.core/apt/docker.sh).
+
 ## specific
 
 [install.sh](install.sh) internally executes the following scripts. So, before executing [install.sh](install.sh), be careful of cautions below.

@@ -26,12 +26,14 @@ git clone --recurse-submodules -j8 https://github.com/jjangga0214/.dotfiles.kali
 Basically, this project is to automatically set preferable environment with ease. [install.sh](install.sh) is for that automation. This handles apt, snap, zsh, oh-my-zsh, node, nvm, go and so on. Also, it clones [jjangga0214/note](https://github.com/jjangga0214/note) to `$HOME`**/note**.
 
 ```bash
-sudo bash install.sh
+# variable is optional
+DOTFILES_DOCKER_DEBIAN_RELEASE=stretch \
+bash install.sh
 ```
 
-## maunal installation and configuration
+## maunal installation, configuration and upgrade
 
-See [MANUAL.md](MANUAL.md).
+Of course, the better the more operations are done automatically. But at least currently, some tasks are not in the range of automation so shoule be manually handled. See [MANUAL.md](MANUAL.md).
 
 ## [license](LICENSE)
 
