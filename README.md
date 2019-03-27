@@ -5,7 +5,7 @@
 ## :warning: CAUTION
 
 * Read [CAUTION.md](CAUTION.md) before any execution here.
-* Read [README.md](.dotfiles.debain.core/README.md) of [.dotfiles.debain.core](.dotfiles.debain.core)(git submodule)
+* Read [.dotfiles.debain.core/README.md](.dotfiles.debain.core/README.md) (git submodule)
 
 ## project convention
 

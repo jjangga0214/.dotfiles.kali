@@ -20,6 +20,6 @@ You can export env vars to override default. Every env var has default value and
 
 [install.sh](install.sh) internally executes the following scripts. So, before executing [install.sh](install.sh), be careful of cautions below.
 
-### [apt/install.pre.sh](apt/install.pre.sh)
+### apt/\*.sh
 
-This literally only works with **apt**. `apt` is used instead of `apt-get`.
+They literally only works with **apt**. `apt` is used instead of `apt-get`.
