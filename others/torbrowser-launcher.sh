@@ -1,0 +1,1 @@
+sudo -u kali -H torbrowser-launcher
