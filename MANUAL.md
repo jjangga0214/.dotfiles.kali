@@ -18,6 +18,10 @@ ELECTRON_RUN_AS_NODE=1 "$ELECTRON" "$CLI" "$@" --user-data-dir=$HOME/.config/vsc
 # ...
 ```
 
+## app image launcher
+
+Download it from [here](https://github.com/TheAssassin/AppImageLauncher) if it's not preinstalled
+
 ## execute apps with non-root user
 
 Some apps does not allow running it with **root**. Others force using unsafe options(e.g. `--no-sandbox` of _google-chrome_). To prevent this, use non-root user. Non-root user named **kali** is created through [others/kali.sh](others/kali.sh). Basic workaround is like below.
