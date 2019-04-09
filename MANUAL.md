@@ -4,20 +4,6 @@
 
 First, see [.dotfiles.debian.core/MANUAL.md](.dotfiles.debian.core/MANUAL.md).
 
-## vscode
-
-After installing vscode(`apt install <vscode>.deb`), edit code shell file (`vi $(which code)`). **root** user need to specify `--user-data-dir` option, and this edition automatically apply it for convenience.
-
-Add `CAN_LAUNCH_AS_ROOT=1` on top. Add `--user-data-dir=$HOME/.config/vscode` on last of bottom. refer [examples/code](examples/code).
-
-```bash
-# ...
-CAN_LAUNCH_AS_ROOT=1
-# ...
-ELECTRON_RUN_AS_NODE=1 "$ELECTRON" "$CLI" "$@" --user-data-dir=$HOME/.config/vscode
-# ...
-```
-
 ## app image launcher
 
 Download it from [here](https://github.com/TheAssassin/AppImageLauncher) if it's not preinstalled
@@ -41,21 +27,23 @@ So, the strategy is like below.
 
 `xhost si:localuser:kali` is executed on system booting thanks to [others/init.sh](others/init.sh), which would be copied into **/etc/profile.d** by [install.sh](install.sh).
 
-### google-chrome
+### alacarte
 
-Refer [examples/google-chrome.desktop](examples/google-chrome.desktop). Use alias `chrome` instead of `google-chrome`
+Set .desktop files `Exec` command through **alacarte** with convenience.
 
-```bash
-# there are total 3 different Execs
-# ...
-#Exec=/usr/bin/google-chrome-stable %U # change this like the line below
-Exec=sudo -u kali -H /usr/bin/google-chrome-stable %U
-# ...
-```
+* google-chrome
+* torbrowser-launcher
+* vscode
 
-### torbrowser-launcher.sh
+### command aliases
 
-Refer [examples/torbrowser.desktop](examples/torbrowser.desktop). Use alias `tor_` instead of `torbrowser-launcher`
+* google-chrome: `chrome`
+* torbrowser-launcher: `tor_`
+* vscode: `code`
+
+### notes
+
+`code` is an aliaes for `code --user-data-dir ~/.config/vscode`. It is executed with privilege of **root** as it needs that.
 
 ## sync oh-my-zsh
 

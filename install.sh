@@ -6,4 +6,4 @@ bash $BASE_DIR/apt/install.post.sh
 bash $BASE_DIR/oh-my-zsh/config.sh
 bash $BASE_DIR/others/kali.sh
 bash $BASE_DIR/others/torbrowser-launcher.sh
-cp $BASE_DIR/others/init.sh /etc/profile.d
+cp $BASE_DIR/others/config.sh
