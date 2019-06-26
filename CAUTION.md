@@ -2,11 +2,11 @@
 
 ## general
 
-* Every execution, installation, configuration is only tested on kali-rolling.
-* Git submodules are used.
-  * Create or checkout a branch when making commit on them.
-  * Check their CAUTIONS (if existing) as well.
-    * [.dotfiles.debian.core/CAUTION.md](.dotfiles.debian.core/CAUTION.md)
+- Every execution, installation, configuration is only tested on kali-rolling.
+- Git submodules are used.
+  - Create or checkout a branch when making commit on them.
+  - Check their CAUTIONS (if existing) as well.
+    - [.dotfiles.debian.core/CAUTION.md](.dotfiles.debian.core/CAUTION.md)
 
 ## environment variables
 
@@ -14,7 +14,7 @@ You can export env vars to override default. Every env var has default value and
 
 (type, default value, source file)
 
-* `$DOTFILES_DOCKER_DEBIAN_RELEASE` (string, `"stretch"`, [apt/docker.sh](apt/docker.sh)): debian version to specify while installing docker. This is independent from variable of same name `$DOTFILES_DOCKER_DEBIAN_RELEASE` used in [.dotfiles.debian.core/apt/docker.sh](.dotfiles.debian.core/apt/docker.sh).
+- `$DOTFILES_DOCKER_DEBIAN_RELEASE` (string, `"stretch"`, [apt/docker.sh](apt/docker.sh)): debian version to specify while installing docker. This is independent from variable of same name `$DOTFILES_DOCKER_DEBIAN_RELEASE` used in [.dotfiles.debian.core/apt/docker.sh](.dotfiles.debian.core/apt/docker.sh).
 
 ## startup
 
@@ -26,8 +26,8 @@ See [others/init.sh](others/init.sh) and [others/config.sh](others/config.sh).
 
 Services below are auto-started on booting by `systemctl enable <service>`.
 
-* docker: see [apt/docker.sh](apt/docker.sh)
-* snapd: see [apt/install.post.sh](apt/install.post.sh)
+- docker: see [apt/docker.sh](apt/docker.sh)
+- snapd: see [apt/install.post.sh](apt/install.post.sh)
 
 ## specific
 

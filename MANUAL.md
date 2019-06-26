@@ -6,7 +6,7 @@ First, see [.dotfiles.debian.core/MANUAL.md](.dotfiles.debian.core/MANUAL.md).
 
 ## app image launcher
 
-Download it from [here](https://github.com/TheAssassin/AppImageLauncher) if it's not preinstalled
+Download it from [here](https://github.com/TheAssassin/AppImageLauncher) if it's not preinstalled.
 
 ## execute apps with non-root user
 
@@ -17,7 +17,7 @@ xhost si:localuser:kali # this can be called only once after system booting.
 sudo -u kali -H <app> <--options>
 ```
 
-So, the strategy is like below. 
+So, the strategy is like below.
 
 1. let the xhost command executed automatically on booting. (See [#xhost](#xhost))
 2. change Exec on .desktop files(on **/usr/share/applications** or `$HOME`**/.local/share/applications**). (See below sections)
@@ -44,12 +44,6 @@ Set .desktop files `Exec` command through **alacarte** with convenience.
 ### notes
 
 `code` is an aliaes for `code --user-data-dir ~/.config/vscode`. It is executed with privilege of **root** as it needs that.
-
-## sync oh-my-zsh
-
-```bash
-bash oh-my-zsh.sync.sh
-```
 
 ## upgrade
 
